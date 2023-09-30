@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=3 python tools/test.py configs/MaCo/upernet_MaCo-base_fp16_8x2_512x512_160k_siim_1per.py /mnt/disk2/hwj/MaCo-pytorch-main/Siim_Segmentation/output/best_Dice.front_iter_1450.pth --eval mDice
