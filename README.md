@@ -50,5 +50,5 @@ chmod a+x test.sh
 ```
 ## Zero-shot phase-grounding
 ```
-python eval_Maco
+python MaCo_grounding.py
 ```
