@@ -27,6 +27,10 @@ In the directory [DatasetsSplits](DatasetsSplits), we provide dataset splits tha
 We give the train/valid/test splits of [CheXpert](DatasetsSplits/CheXpert), [NIH ChestX-ray](DatasetsSplits/NIH_ChestX-ray), and [RSNA Pneumonia](DatasetsSplits/RSNA_Pneumonia).
 
 ## Pretraining
+Adjust the necessary paths and perform the following code:
+```
+CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 --master_port=29501 main_pretrain.py;
+```
 
 ## Fine-tuning of classification
 
