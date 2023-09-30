@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ## Datasets splits
 In the directory [DatasetsSplits](DatasetsSplits), we provide dataset splits that may be helpful for organizing the datasets.
 
-We give the train/valid/test splits of [CheXpert](DatasetsSplits/CheXpert), [NIH ChestX-ray](DatasetsSplits/NIH_ChestX-ray), [RSNA Pneumonia](DatasetsSplits/RSNA_Pneumonia), and [SIIM-ACR Pneumothorax](DatasetsSplits/RSNA_Pneumonia).
+We give the train/valid/test splits of [CheXpert](DatasetsSplits/CheXpert), [NIH ChestX-ray](DatasetsSplits/NIH_ChestX-ray), [RSNA Pneumonia](DatasetsSplits/RSNA_Pneumonia), and [SIIM-ACR Pneumothorax](DatasetsSplits/SIIM-ACR_Pneumothorax).
 
 ## Pretraining
 Adjust the necessary paths and perform the following code:
