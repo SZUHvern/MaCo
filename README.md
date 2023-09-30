@@ -2,7 +2,7 @@
 The code of 'Enhancing Representation in Radiography-Reports Foundation Model: A Granular Alignment Algorithm Using Masked Contrastive Learning'
 Some code is borrowed from MAE, huggingface, and MRM.
 
-# Environmental preparation
+## Environmental preparation
 ```
 conda create -n MaCo python=3.8
 conda activate MaCo
@@ -30,10 +30,10 @@ For [COVID-19 Image Data Collection](DatasetsSplits/COVID-19_Image_Data_Collecti
 
 For [SIIM-ACR_Pneumothorax](DatasetsSplits/SIIM-ACR_Pneumothorax), please organize the directories of images and annotations as section 5.1 mentioned according to the given splits.
 
-# Pretraining
+## Pretraining
 
-# Fine-tuning of classification
+## Fine-tuning of classification
 
-# Fine-tuning of segmentation
+## Fine-tuning of segmentation
 
-# Zero-shot phase-grounding
+## Zero-shot phase-grounding
