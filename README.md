@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ## Datasets splits
 In the directory [DatasetsSplits](DatasetsSplits), we provide dataset splits that may be helpful for organizing the datasets.
 
-We give the train/valid/test splits of [CheXpert](DatasetsSplits/CheXpert), [NIH ChestX-ray](DatasetsSplits/NIH_ChestX-ray), and [RSNA Pneumonia](DatasetsSplits/RSNA_Pneumonia).
+We give the train/valid/test splits of [CheXpert](DatasetsSplits/CheXpert), [NIH ChestX-ray](DatasetsSplits/NIH_ChestX-ray), [RSNA Pneumonia](DatasetsSplits/RSNA_Pneumonia), and [SIIM-ACR Pneumothorax](DatasetsSplits/RSNA_Pneumonia).
 
 ## Pretraining
 Adjust the necessary paths and perform the following code:
@@ -32,14 +32,17 @@ Adjust the necessary paths and perform the following code:
 CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 --master_port=29501 main_pretrain.py;
 ```
 
-## Fine-tuning of classification (NIH ChestX-ray as example)
+## Fine-tuning of classification
+We use NIH ChestX-ray as an example:
 ```
+cd CLS-NIH ChestX-ray
 CUDA_VISIBLE_DEVICES=0 python train.py --pretrained_path "./pretrained-model/checkpoint-30.pth";
 python test.py --model pretrained-model --gpu 4;
 ```
 
 ## Fine-tuning of segmentation
 ```
+cd 
 chmod a+x ft.sh
 ./ft.sh
 chmod a+x test.sh
