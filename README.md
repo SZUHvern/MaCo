@@ -32,8 +32,20 @@ Adjust the necessary paths and perform the following code:
 CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 --master_port=29501 main_pretrain.py;
 ```
 
-## Fine-tuning of classification
+## Fine-tuning of classification (NIH ChestX-ray as example)
+```
+CUDA_VISIBLE_DEVICES=0 python train.py --pretrained_path "./pretrained-model/checkpoint-30.pth";
+python test.py --model pretrained-model --gpu 4;
+```
 
 ## Fine-tuning of segmentation
-
+```
+chmod a+x ft.sh
+./ft.sh
+chmod a+x test.sh
+./test.sh
+```
 ## Zero-shot phase-grounding
+```
+python eval_Maco
+```
