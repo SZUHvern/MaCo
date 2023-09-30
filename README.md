@@ -17,18 +17,14 @@ pip install -r requirements.txt
 
 - [RSNA Pneumonia](https://www.kaggle.com/competitions/rsna-pneumonia-detection-challenge)
 
-- [COVID-19 Image Data Collection](https://github.com/ieee8023/covid-chestxray-dataset)
-
 - [SIIM-ACR Pneumothorax](https://www.kaggle.com/c/siim-acr-pneumothorax-segmentation)
+
+- [MS-CXR](https://aka.ms/ms-cxr)
 
 ## Datasets splits
 In the directory [DatasetsSplits](DatasetsSplits), we provide dataset splits that may be helpful for organizing the datasets.
 
 We give the train/valid/test splits of [CheXpert](DatasetsSplits/CheXpert), [NIH ChestX-ray](DatasetsSplits/NIH_ChestX-ray), and [RSNA Pneumonia](DatasetsSplits/RSNA_Pneumonia).
-
-For [COVID-19 Image Data Collection](DatasetsSplits/COVID-19_Image_Data_Collection), we randomly split the train/valid/test set 5 times and we provide the images in the [images](DatasetsSplits/COVID-19_Image_Data_Collection/images) directory.
-
-For [SIIM-ACR_Pneumothorax](DatasetsSplits/SIIM-ACR_Pneumothorax), please organize the directories of images and annotations as section 5.1 mentioned according to the given splits.
 
 ## Pretraining
 
