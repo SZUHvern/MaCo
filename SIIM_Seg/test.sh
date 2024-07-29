@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python tools/test.py configs/MaCo/upernet_MaCo-base_fp16_8x2_512x512_160k_siim_10per.py /path/to/Siim_Segmentation/output/latest.pth --eval mDice
