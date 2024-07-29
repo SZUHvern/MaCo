@@ -1,7 +1,7 @@
 # MaCo
 
 <!-- Insert the project banner here -->
-![img](figure/Figure.pdf)
+![img](figure/Figure.png)
 
 
 ## Key Features
