@@ -10,7 +10,7 @@ This repository provides the official implementation of "Enhancing Representatio
 
 In this study, we present MaCo, a masked contrastive chest X-ray foundation model that tackles these challenges. MaCo explores masked contrastive learning to simultaneously achieve fine-grained image understanding and zero-shot learning for a variety of medical imaging tasks. It designs a correlation weighting mechanism to adjust the correlation between masked chest X-ray image patches and their corresponding reports, thereby enhancing the model's representation learning capabilities. To evaluate the performance of MaCo, we conducted extensive experiments using 6 well-known open-source X-ray datasets. 
 
-## Links
+## Paper Links
 
 - [Paper](https://arxiv.org/abs/2309.05904)
 
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 2. Download the models, including the MAE weights used in the pre-training phase and the well-trained MaCo model for validating downstream tasks.
 
-3. Download all datasets according to the "Dataset Links" and split them into training, validation, and test sets based on the "DatasetsSplits".
+3. Download all datasets according to the "Dataset Links" and split them into training, validation, and test sets based on the "Dataset Split Link".
 
 4. Please replace all instances of "path/to/.." in the code with the specific paths to your files.
 
@@ -103,8 +103,10 @@ If you find this repository useful, please consider citing this paper:
 @article{huang2023enhancing,
   title={Enhancing representation in radiography-reports foundation model: A granular alignment algorithm using masked contrastive learning},
   author={Weijian Huang, Cheng Li, Hong-Yu Zhou, Hao Yang, Jiarun Liu, Yong Liang, Hairong Zheng, Shaoting Zhang, Shanshan Wang},
-  journal={arXiv preprint arXiv:2309.05904},
-  year={2023}
+  journal={Nature Communications},
+  volume={15},
+  number={7620}
+  year={2024}
 }
 ```
 
