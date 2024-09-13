@@ -12,7 +12,7 @@ In this study, we present MaCo, a masked contrastive chest X-ray foundation mode
 
 ## Paper Links
 
-- [Paper](https://arxiv.org/abs/2309.05904)
+- [MaCo](https://www.nature.com/articles/s41467-024-51749-0#:~:text=Multi-modal%20foundation%20models%20are)
 
 ## Dataset Links
 
