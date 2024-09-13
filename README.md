@@ -27,7 +27,10 @@ In this study, we present MaCo, a masked contrastive chest X-ray foundation mode
 ## Model Links
 - [MAE](https://drive.google.com/file/d/1LZwbPUKmQum5fYDWbJ7iVXdrYFNtff3X/view?usp=sharing)
 - [MaCo](https://drive.google.com/file/d/1B87JuLJnjh_CoQpjT7RWGTp6alfXV8_0/view?usp=sharing)
-  
+
+## Dataset Split Link
+- [Dataset Split](https://github.com/RL4M/MRM-pytorch/tree/main/DatasetsSplits)
+
 ## Get Started
 
 
