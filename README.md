@@ -32,7 +32,7 @@ In this study, we present MaCo, a masked contrastive chest X-ray foundation mode
 - [Dataset Split](https://github.com/RL4M/MRM-pytorch/tree/main/DatasetsSplits)
 
 ## Getting Start
-# Preprocess
+### Preprocess
 1. To install the required environment packages, please use the following code. It is recommended to install them in a new conda virtual environment:
 ```bash
 pip install -r requirements.txt
@@ -45,12 +45,12 @@ pip install -r requirements.txt
 4. Please replace all instances of "path/to/.." in the code with the specific paths to your files.
 
 
-## Pre-training
+### Pre-training
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 --master_port=29501 main_pretrain.py --SR 1 --mask_ratio 0.5 --lam 0.9 --T 0.03 --warmup_epochs 2 --batch_size 512 --epochs 51 --lr 2.5e-4 --prefix maco
 ```
 
-## Fine-tuning Classification
+### Fine-tuning Classification
 We provide a classification example based on the NIH dataset, including training with 1%, 10%, and 100% of the annotated data, along with the corresponding evaluation process:
 ```bash
 cd ./CLS-NIH_ChestX-ray/
@@ -64,7 +64,7 @@ To streamline the classification process, we have included additional script fil
 python train_finetune_terminal_all.py
 ```
 
-## Fine-tuning Segmentation
+### Fine-tuning Segmentation
 We conduct all segmentation experiments using [MMSegmentaiton](https://github.com/open-mmlab/mmsegmentation) (version 0.25.0). We recommend that readers set up the environment in advance and familiarize themselves with the code structure of MMSegmentation.
 
 The necessary configuration files are provided in the "SIIM_Seg" directory. After integrating these files into the MMSegmentation framework, you can start fine-tuning using ft.sh and evaluation using test.sh.
@@ -73,18 +73,18 @@ The necessary configuration files are provided in the "SIIM_Seg" directory. Afte
 ./test.sh
 ```
 
-## Fine-tuning Detection
+### Fine-tuning Detection
 We implement the detection task using [ViTDet](https://github.com/facebookresearch/detectron2/tree/main/projects/ViTDet). We recommend that readers set up the environment in advance and familiarize themselves with the code structure of ViTDet.
 The necessary configuration files are provided in the "detectron2" directory. 
 ```bash
  cd ./detectron2/projects/ViTDet
 ../../tools/lazyconfig_train_net_rsna.py train.init_checkpoint=path/to/maco.pth
 ```
-## Zero-shot classification
+### Zero-shot classification
 ```bash
 python Zeroshot Classification.py --pretrained_path "/path/to/maco.pth" --dataset_list ["NIH", "RSNA", "SIIM"]
 ```
-## Zero-shot Phrase-grounding
+### Zero-shot Phrase-grounding
 ```bash
 python Phrase Grounding --ckpt_dir "/path/to/maco.pth"
 ```
