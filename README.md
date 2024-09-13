@@ -10,7 +10,7 @@ This repository provides the official implementation of "Enhancing Representatio
 
 In this study, we present MaCo, a masked contrastive chest X-ray foundation model that tackles these challenges. MaCo explores masked contrastive learning to simultaneously achieve fine-grained image understanding and zero-shot learning for a variety of medical imaging tasks. It designs a correlation weighting mechanism to adjust the correlation between masked chest X-ray image patches and their corresponding reports, thereby enhancing the model's representation learning capabilities. To evaluate the performance of MaCo, we conducted extensive experiments using 6 well-known open-source X-ray datasets. 
 
-## Paper Links
+## Paper Link
 
 - [MaCo](https://www.nature.com/articles/s41467-024-51749-0#:~:text=Multi-modal%20foundation%20models%20are)
 
@@ -31,10 +31,8 @@ In this study, we present MaCo, a masked contrastive chest X-ray foundation mode
 ## Datasets split Link
 - [Dataset Split](https://github.com/RL4M/MRM-pytorch/tree/main/DatasetsSplits)
 
-## Get Started
-
-
-## Preprocess
+## Getting Start
+# Preprocess
 1. To install the required environment packages, please use the following code. It is recommended to install them in a new conda virtual environment:
 ```bash
 pip install -r requirements.txt
